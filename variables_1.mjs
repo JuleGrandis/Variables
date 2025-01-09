@@ -23,6 +23,12 @@ console.log(var2);
     Calculate the area of a circle with the radius 6.
 */
 
+let radius = 6;
+let pi = 3.14;
+
+let area = pi * radius * radius;
+
+console.log(area);
 
 /* Task 3
     Given the two strings "If at first you do not succeed, try, try again" and "Fall seven times, stand up eight".
