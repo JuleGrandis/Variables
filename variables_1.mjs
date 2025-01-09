@@ -87,7 +87,21 @@ console.log(isGreaterThan);
     Create a new variable that is the intersection of words between the two strings.
     Create a new variable that is the union of words between the two strings.
 */
+addSpacing(1);
+console.log("Task 6")
 
+let string3 = "Life is short. Smile while you still have teeth.";
+let string4 = "The best therapy is a good laugh and great friends.";
+
+let words1 = new Set(string3.toLocaleLowerCase().replace(/[^\w\s]/g, '').split(' '));
+let words2 = new Set(string4.toLocaleLowerCase().replace(/[^\w\s]/g, '').split(' '));
+
+let intersection = [...words1].filter(word => words2.has(word));
+
+let union = [...new Set([...words1, ...words2])];
+
+console.log(intersection);
+console.log(union);
 
 //#region Util Function
 function addSpacing(lines = 1) {
